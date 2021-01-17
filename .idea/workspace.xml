@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d5021a40-4ad3-4aea-91ed-df2fbfab2b01" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1nC0S8brdT3Jiyop40dn6AZtNOc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d5021a40-4ad3-4aea-91ed-df2fbfab2b01" name="Default Changelist" comment="" />
+      <created>1610878768566</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1610878768566</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="443" y="106" width="1024" height="852" key="#Project_Structure" timestamp="1610878775975">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="443" y="106" width="1024" height="852" key="#Project_Structure/0.27.1920.1003@0.27.1920.1003" timestamp="1610878775975" />
+    <state x="643" y="265" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1610879372996">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="643" y="265" width="624" height="533" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.27.1920.1003@0.27.1920.1003" timestamp="1610879372996" />
+    <state x="738" y="275" width="424" height="520" key="FileChooserDialogImpl" timestamp="1610879114348">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="738" y="275" width="424" height="520" key="FileChooserDialogImpl/0.27.1920.1003@0.27.1920.1003" timestamp="1610879114348" />
+    <state x="793" y="322" width="324" height="419" key="svn.repositoryBrowser" timestamp="1610879136672">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="793" y="322" width="324" height="419" key="svn.repositoryBrowser/0.27.1920.1003@0.27.1920.1003" timestamp="1610879136672" />
+    <state x="766" y="299" width="369" height="472" key="svn4idea.import.options" timestamp="1610879124524">
+      <screen x="0" y="27" width="1920" height="1003" />
+    </state>
+    <state x="766" y="299" width="369" height="472" key="svn4idea.import.options/0.27.1920.1003@0.27.1920.1003" timestamp="1610879124524" />
+  </component>
+</project>
