@@ -213,9 +213,9 @@ metadata:
 spec:
   rules:
     - host: oxylabai.info			#made up hostname. once ingress pod starts up it gets external IP address which can be assigned with the hostname in /etc/hosts file for testing purposes
-      http:					in my case it was 
-        paths:					NAME              CLASS    HOSTS           ADDRESS        PORTS   AGE
-          - path: /				example-ingress   <none>   oxylabai.info   192.168.49.2   80      127m
+      http:					    #in my case it was
+        paths:					#NAME              CLASS    HOSTS           ADDRESS        PORTS   AGE
+          - path: /				#example-ingress   <none>   oxylabai.info   192.168.49.2   80      127m
             pathType: Prefix
             backend:
               service:
