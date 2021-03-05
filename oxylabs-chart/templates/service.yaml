@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: {{ include "oxylabs-chart.fullname" . }}
+  name: {{ include "company-chart.fullname" . }}
   labels:
-    {{- include "oxylabs-chart.labels" . | nindent 4 }}
+    {{- include "company-chart.labels" . | nindent 4 }}
 spec:
   type: {{ .Values.service.type }}
   ports:
@@ -12,4 +12,4 @@ spec:
       protocol: TCP
       name: http
   selector:
-    {{- include "oxylabs-chart.selectorLabels" . | nindent 4 }}
+    {{- include "company-chart.selectorLabels" . | nindent 4 }}

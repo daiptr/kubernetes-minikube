@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: "{{ include "oxylabs-chart.fullname" . }}-test-connection"
+  name: "{{ include "company-chart.fullname" . }}-test-connection"
   labels:
-    {{- include "oxylabs-chart.labels" . | nindent 4 }}
+    {{- include "company-chart.labels" . | nindent 4 }}
   annotations:
     "helm.sh/hook": test
 spec:
@@ -11,5 +11,5 @@ spec:
     - name: wget
       image: busybox
       command: ['wget']
-      args: ['{{ include "oxylabs-chart.fullname" . }}:{{ .Values.service.port }}']
+      args: ['{{ include "company-chart.fullname" . }}:{{ .Values.service.port }}']
   restartPolicy: Never

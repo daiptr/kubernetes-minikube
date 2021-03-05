@@ -1,7 +1,7 @@
 {{/*
 Expand the name of the chart.
 */}}
-{{- define "oxylabs-chart.name" -}}
+{{- define "company-chart.name" -}}
 {{- default .Chart.Name .Values.nameOverride | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
@@ -10,7 +10,7 @@ Create a default fully qualified app name.
 We truncate at 63 chars because some Kubernetes name fields are limited to this (by the DNS naming spec).
 If release name contains chart name it will be used as a full name.
 */}}
-{{- define "oxylabs-chart.fullname" -}}
+{{- define "company-chart.fullname" -}}
 {{- if .Values.fullnameOverride }}
 {{- .Values.fullnameOverride | trunc 63 | trimSuffix "-" }}
 {{- else }}
@@ -26,16 +26,16 @@ If release name contains chart name it will be used as a full name.
 {{/*
 Create chart name and version as used by the chart label.
 */}}
-{{- define "oxylabs-chart.chart" -}}
+{{- define "company-chart.chart" -}}
 {{- printf "%s-%s" .Chart.Name .Chart.Version | replace "+" "_" | trunc 63 | trimSuffix "-" }}
 {{- end }}
 
 {{/*
 Common labels
 */}}
-{{- define "oxylabs-chart.labels" -}}
-helm.sh/chart: {{ include "oxylabs-chart.chart" . }}
-{{ include "oxylabs-chart.selectorLabels" . }}
+{{- define "company-chart.labels" -}}
+helm.sh/chart: {{ include "company-chart.chart" . }}
+{{ include "company-chart.selectorLabels" . }}
 {{- if .Chart.AppVersion }}
 app.kubernetes.io/version: {{ .Chart.AppVersion | quote }}
 {{- end }}
@@ -45,17 +45,17 @@ app.kubernetes.io/managed-by: {{ .Release.Service }}
 {{/*
 Selector labels
 */}}
-{{- define "oxylabs-chart.selectorLabels" -}}
-app.kubernetes.io/name: {{ include "oxylabs-chart.name" . }}
+{{- define "company-chart.selectorLabels" -}}
+app.kubernetes.io/name: {{ include "company-chart.name" . }}
 app.kubernetes.io/instance: {{ .Release.Name }}
 {{- end }}
 
 {{/*
 Create the name of the service account to use
 */}}
-{{- define "oxylabs-chart.serviceAccountName" -}}
+{{- define "company-chart.serviceAccountName" -}}
 {{- if .Values.serviceAccount.create }}
-{{- default (include "oxylabs-chart.fullname" .) .Values.serviceAccount.name }}
+{{- default (include "company-chart.fullname" .) .Values.serviceAccount.name }}
 {{- else }}
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
