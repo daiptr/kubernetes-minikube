@@ -1,0 +1,46 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: application
+  labels:
+    app: application
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: application
+  template:
+    metadata:
+      labels:
+        app: application
+    spec:
+      containers:
+        - name: application
+          image: application
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 3000
+          env:
+            - name: REDIS_PASSWORD
+              valueFrom:
+                secretKeyRef:
+                  name: redis-secret
+                  key: REDIS_PASSWORD
+            - name: REDIS_HOST
+              valueFrom:
+                configMapKeyRef:
+                  name: redis-configmap
+                  key: REDIS_HOST
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: application-service
+spec:
+  selector:
+    app: application
+  ports:
+    - protocol: TCP
+      port: 3000
+      targetPort: 3000
